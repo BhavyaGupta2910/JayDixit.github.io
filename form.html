@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+Form Tag</title>
+<style>
+body{
+background-image:url(gam.jpg);
+background-attachment:fixed;
+background-size:cover;
+}
+label{
+width:100px;
+margin:1px;
+}
+#form{
+border-radius:10px;
+background:black;
+color:red;
+width:290px;
+padding:4px;
+margin-left:1080px;
+margin-top:200px;
+}
+h4{
+text-align:center;}
+#submit{width:100%;
+margin-top:10px;}
+#reset{
+width:100%;
+margin-top:10px;}
+</style>
+</head>
+<body>
+<font size="5">
+<div id="form">
+<form>
+<h4>Log IN</h4>
+<label>Name:</label><input type="text" placeholder="enter your name" name="fname"><br>
+<label>Password:</label><input type="password" placeholder="enter password" name="pwd"><br>
+<label>Gender:</label>
+<label>Male</label><input type="radio" name="gender">
+<label>Female</label><input type="radio" name="gender"><br>
+<label>Date:</label><input type="date" name="date"><br>
+<label>Time:</label><input type="time" name="time"><br>
+<label>Month:</label><input type="month" name="month"><br>
+<label>Country:India</label><input type="checkbox" name="country">
+<label>Others:</label><input type="checkbox" name="country"><br>
+<label>Phone No.:</label><input type="number" placeholder="enter phone number" name="pn">
+<input type="submit" name="submit" id="submit">
+<input type="reset" name="reset" id="reset">
+</font>
+</form>
+</div>
+</body>
+</html>

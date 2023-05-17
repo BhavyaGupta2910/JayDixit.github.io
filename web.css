@@ -1,0 +1,440 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+/*Nav : Logo and image*/
+#logo{
+    margin: 0px 20px;
+}
+#logo img{
+     height:66px;
+     margin: 0px 0px
+}
+
+/*Nav : List styling*/
+.navbar ul{
+    display: flex;
+}  
+.navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    z-index: -1;
+    opacity:95%;
+
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+.navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+.navbar ul li a:hover{
+    color: black;
+   background-color: white;
+
+}
+/*Home*/
+#home{
+    /* display: flex; */
+    flex-direction: column;
+    padding: 0px 0px;
+    height: 700px;
+    justify-content:center;
+    align-items: start;
+    text-align: left;
+}
+#home:hover{
+  /*  box-shadow: 10px 10px 54px green;
+    transform: scale(0.9);*/
+}
+#home::before{
+    content:"";
+    background:url(COD_Hub_Hero_Desktop.jpg) no-repeat center center/cover;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+
+}
+#home h1{
+    color: darkred;
+    text-align:left;
+    font-size: 4rem;
+    font-family: 'Passions Conflict', cursive;
+}
+#form:hover{
+    box-shadow: 10px 10px 54px darkred;
+    transform: scale(0.9);
+}
+#form label{
+    width:100px;
+    margin:10px;
+    }
+    #form{
+    border-radius:10px;
+    background:black;
+    color:red;
+    width:190px;
+    padding:25px;
+    margin-left:0px;
+    margin-top:0px;
+    }
+   #form h4{
+    text-align:center;}
+    #reset{
+    width:22%;
+    margin-top:10px;}
+#home p{
+    color: #BF360C;
+    text-align:left;
+    font-size: 3rem;
+    font-family: 'Passions Conflict', cursive;
+}
+/*Services section*/
+.bg{
+    background: url(call_of_duty_online_game.jpg);
+    height:450px;
+    width: 100%;
+}
+.bg:hover{
+    box-shadow: 10px 10px 54px green;
+    transform: scale(0.9);
+}
+#services{
+    margin:1px ;
+    display: flex;  /*Our features*/
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 0px;
+    margin: 3px 19px;
+    border-radius: 0px;
+    background: #cbbcb4; /*channge background to image background*/
+}
+#services .box img{
+    height: 255px;
+    margin: auto;
+    display: block;
+    transition: 0.5s all ease-in-out;
+}
+#services .box img:hover{
+    box-shadow: 10px 10px 54px darkred;
+    transform: scale(0.9);
+}
+/*Get the game*/
+#game{
+    background: black;
+    height:500px;
+}
+#game:hover{
+    box-shadow: 10px 10px 54px green;
+    transform: scale(0.9);
+}
+#game h1{
+    text-align: center;
+    color: white;
+    font-size: 3.2rem;
+}
+#get{
+     margin:1px 110px; 
+   display: flex;   /*bhai Get the game mein changes ho rhe h  */
+}
+
+#get .getgame{
+     
+    padding: 10px;
+    /* margin-right: 50%; */
+    margin: 3px 1px; 
+    
+}
+#get .getgame img{
+    height: 255px;
+    margin: auto;
+    /* display: block; */
+    transition: 0.5s all ease-in-out;
+
+}
+#get .getgame img:hover{
+    box-shadow: 10px 10px 54px darkred;
+    transform: scale(0.9);
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.9;
+    background: url(contact.jpeg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    color:white;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*Utility Classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: left;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: darkred;
+    color: black;
+    margin: 5px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    cursor:pointer;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+    color: white;
+}
+.center1{
+    text-align: center;
+    color: black;
+}
+.center1 a{
+    color:black;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+.center1 a:hover{
+    color: black;
+   background-color: white;
+
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width:33px;
+    background-color: white;
+    height:4px;
+    margin:3px 3px;
+}
+@media only screen and (max-width: 1380px)
+{
+.nav-list{
+    flex-direction:column;
+}
+.navbar{
+    flex-direction: column;
+    transition:all 0.8 s ease-out;
+}
+.burger{
+    display: block;
+}
+.h-nav-resp{
+    height: 45px;
+}
+.v-class-resp{
+    opacity: 0;
+}
+#services .box{
+    margin: auto;
+    padding: auto;
+    height:auto;
+    flex-direction: column-reverse;
+}
+#services{
+    margin:1px ;
+      display: flex;
+      flex-direction: column;
+      /* margin-bottom: 20px; */
+      padding: 10px;
+      height: 100%;
+
+}
+.bg{
+    background: url(call_of_duty_online_game.jpg);
+    height:1600px;
+    width: 100%;
+    background-repeat: repeat;
+    padding-bottom: 5px;
+}
+#get{
+    margin:1px 110px;
+   display: flex;   /*bhai Get the game mein changes ho rhe h  */
+   flex-direction: column;
+   padding: 1px;
+   flex-grow: 1;
+}
+#game{
+    background: black;
+    height:1100px;
+} 
+#bhavyagetgame
+{
+    padding-top: 50px;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    transition: 0.5s all ease-in-out;
+}
+#get .getgame img{
+    height: 200px;
+    margin: auto;
+    display: block;
+    transition: 0.5s all ease-in-out;
+    flex-wrap: wrap;
+
+}
+}
+@media only screen and (max-width: 390px)
+{
+    /* *
+    {
+        display: none;
+    } */
+    .bg{
+        background: url(call_of_duty_online_game.jpg);
+        height:1600px;
+        width: 100%;
+        background-repeat: repeat;
+        padding-bottom: 5px;
+    }
+    #get{
+        margin:1px 110px;
+       display: flex;   /*bhai Get the game mein changes ho rhe h  */
+       flex-direction: column;
+       padding: 1px;
+       flex-grow: 1;
+    }
+    #game{
+        background: black;
+        height:1100px;
+    } 
+    #bhavyagetgame
+    {
+        padding-top: 50px;
+    }
+    #services .box img{
+        height: 110px;
+        margin: auto;
+        display: block;
+        transition: 0.5s all ease-in-out;
+    }
+    #get .getgame img{
+        height: 150px;
+        margin: auto;
+        display: block;
+        transition: 0.5s all ease-in-out;
+        flex-wrap: wrap;
+    
+    }
+}
+@media only screen and (max-width: 310px)
+{
+    /* *
+    {
+        display: none;
+    } */
+    .bg{
+        background: url(call_of_duty_online_game.jpg);
+        height:1600px;
+        width: 100%;
+        background-repeat: repeat;
+        padding-bottom: 5px;
+    }
+    #get{
+        margin:1px 110px;
+       display: flex;   /*bhai Get the game mein changes ho rhe h  */
+       flex-direction: column;
+       padding: 1px;
+       flex-grow: 1;
+    }
+    #game{
+        background: black;
+        height:1100px;
+    } 
+    #bhavyagetgame
+    {
+        padding-top: 50px;
+    }
+    #services .box img{
+        height: 80px;
+        margin: auto;
+        display: block;
+        transition: 0.5s all ease-in-out;
+    }
+    #get .getgame img{
+        height: 100px;
+        margin: auto;
+        display: block;
+        transition: 0.5s all ease-in-out;
+        flex-wrap: wrap;
+    
+    }
+}
